@@ -1,0 +1,69 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: beige;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    transform: translateY(25%);
+}
+
+.screen {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choix>img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.screen>img {
+    width: 200px;
+    height: 200px;
+}
+
+.choix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    transform: translateY(10%);
+}
+.choix>img:hover {
+    transform: scale(1.1);
+}
+
+.pierre {
+    display:block;
+}
+.feuille {
+    display: block;
+}
+.ciseau {
+    display: block;
+}
+
+.resultat {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
